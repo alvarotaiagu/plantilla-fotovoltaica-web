@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SOLAINA — plantilla de demostración (negocio ficticio)
+   GNOMON — plantilla de demostración (negocio ficticio)
    Concepto «Sombra». GSAP, ScrollTrigger y Lenis por CDN; sin ellos la página
    se lee entera y el tejado se ve al mediodía, que es su estado legible.
    ========================================================================== */
@@ -46,7 +46,7 @@
   (function cookies() {
     var banner = $("#cookie-banner"), ok = $("#cookie-ok");
     if (!banner || !ok) { return; }
-    var CLAVE = "solaina-cookies";
+    var CLAVE = "gnomon-cookies";
     var aceptado = false;
     try { aceptado = localStorage.getItem(CLAVE) === "1"; } catch (e) {}
     if (!aceptado) { banner.hidden = false; }

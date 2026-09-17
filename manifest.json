@@ -1,6 +1,6 @@
 {
-  "name": "SOLAINA · Instalación fotovoltaica (demostración)",
-  "short_name": "SOLAINA",
+  "name": "GNOMON · Instalación fotovoltaica (demostración)",
+  "short_name": "GNOMON",
   "description": "Plantilla de demostración de una empresa instaladora fotovoltaica ficticia, construida alrededor del estudio de sombras de un tejado.",
   "lang": "es",
   "start_url": "./index.html",

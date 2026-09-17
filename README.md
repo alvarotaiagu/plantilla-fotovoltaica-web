@@ -1,6 +1,6 @@
-# SOLAINA · plantilla para instaladores fotovoltaicos
+# GNOMON · plantilla para instaladores fotovoltaicos
 
-> **Sitio de demostración.** SOLAINA es una empresa **ficticia**. El nombre, el
+> **Sitio de demostración.** GNOMON es una empresa **ficticia**. El nombre, el
 > CIF, la dirección de la nave, el teléfono, el correo, los horarios, los precios,
 > los tres casos de ejemplo, las opiniones y las tres personas del equipo están
 > **inventados** para enseñar la plantilla. No corresponden a ninguna empresa ni a
@@ -126,7 +126,7 @@ recuento se escriben igual, y los contadores muestran su cifra final.
 
 1. **Los datos ficticios, todos fuera.** Están concentrados en `index.html`
    (cabecera, secciones 03, 05, 06 y 08, pie y `ld+json`), en `aviso-legal.html` y
-   en `manifest.json`. Busca `SOLAINA`, `986 00 00 00`, `solaina.example`,
+   en `manifest.json`. Busca `GNOMON`, `986 00 00 00`, `gnomon.example`,
    `Corredoira` y `B00000000`.
 2. **Quita los sellos de demostración**: el comentario del principio de cada HTML,
    el `<meta name="robots" content="noindex, nofollow">`, el `<p class="sello">`

@@ -1,6 +1,6 @@
 # Créditos y procedencia de los recursos
 
-**Sitio de demostración. SOLAINA es un negocio ficticio.**
+**Sitio de demostración. GNOMON es un negocio ficticio.**
 
 ## Fotografías: ninguna
 

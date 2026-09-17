@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ============================================================================
-  SITIO DE DEMOSTRACIÓN. SOLAINA es una empresa de instalación fotovoltaica
+  SITIO DE DEMOSTRACIÓN. GNOMON es una empresa de instalación fotovoltaica
   FICTICIA. Nombre, dirección, teléfono, horarios, precios, casos de ejemplo y
   equipo son datos de muestra inventados para enseñar la plantilla. No
   corresponden a ninguna empresa real ni a ninguna instalación real.
@@ -12,12 +12,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SOLAINA · Instaladores fotovoltaicos en Lalín (demo)</title>
+<title>GNOMON · Instaladores fotovoltaicos en Lalín (demo)</title>
 <meta name="description" content="Plantilla de demostración de una empresa de instalación fotovoltaica ficticia: estudio de sombras, equipos, papeles y casos de ejemplo. Todos los datos son de muestra.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0A0D0C">
 <meta property="og:type" content="website">
-<meta property="og:title" content="SOLAINA · Instaladores fotovoltaicos (sitio de demostración)">
+<meta property="og:title" content="GNOMON · Instaladores fotovoltaicos (sitio de demostración)">
 <meta property="og:description" content="Negocio ficticio. Lo que decide una instalación no es el sol: es la sombra.">
 <meta property="og:image" content="assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -34,7 +34,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "name": "SOLAINA",
+  "name": "GNOMON",
   "description": "Empresa de instalación fotovoltaica ficticia usada como plantilla de demostración.",
   "address": {
     "@type": "PostalAddress",
@@ -45,7 +45,7 @@
     "addressCountry": "ES"
   },
   "telephone": "+34986000000",
-  "email": "hola@solaina.example",
+  "email": "hola@gnomon.example",
   "priceRange": "€€",
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "18:30" }
@@ -60,9 +60,9 @@
 <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-punto"></span><span class="cursor-texto" id="cursor-texto"></span></div>
 
 <header class="cabecera" id="cabecera">
-  <a class="marca" href="#inicio" aria-label="SOLAINA, inicio">
+  <a class="marca" href="#inicio" aria-label="GNOMON, inicio">
     <img src="assets/logo.svg" width="52" height="52" alt="" class="marca-mark">
-    <span class="marca-texto">SOLAINA<em>instalación fotovoltaica · Lalín</em></span>
+    <span class="marca-texto">GNOMON<em>instalación fotovoltaica · Lalín</em></span>
   </a>
 
   <nav class="nav" id="nav" aria-label="Principal">
@@ -141,6 +141,8 @@
       <p class="parrafo">Este es el estudio que hacemos antes de dar un solo número: el sol recorre el día,
         la sombra de la chimenea y del árbol barre el tejado, y se apunta qué paneles quedan tapados y a
         qué hora. Baja y pasa el día.</p>
+      <p class="parrafo parrafo--nota">De ahí el nombre: el <b>gnomon</b> es la varilla de un reloj de sol,
+        la pieza que no da luz —da sombra— y sin la cual el reloj no marca nada.</p>
     </div>
 
     <div class="sombra-escena" id="sombra-escena">
@@ -397,7 +399,7 @@
         aparte si hacen falta.</p>
     </div>
     <table class="tabla">
-      <caption class="visual-oculto">Precios orientativos de muestra de la empresa ficticia SOLAINA</caption>
+      <caption class="visual-oculto">Precios orientativos de muestra de la empresa ficticia GNOMON</caption>
       <thead>
         <tr><th scope="col">Instalación</th><th scope="col">Qué incluye</th><th scope="col">Desde</th></tr>
       </thead>
@@ -490,7 +492,10 @@
           <label for="f-mensaje">Cuéntanos cómo es la casa</label>
           <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
         </div>
-        <label class="campo-check"><input type="checkbox" id="f-ok" name="ok" required> He leído el <a href="aviso-legal.html">aviso legal</a>.</label>
+        <!-- el texto va dentro de un <span>: en un contenedor flex, cada trozo de
+             texto suelto es un item más y se le aplica el `gap` (salía «legal .») -->
+        <label class="campo-check"><input type="checkbox" id="f-ok" name="ok" required>
+          <span>He leído el <a href="aviso-legal.html">aviso legal</a>.</span></label>
         <button class="boton boton--verde" type="submit" data-iman>Pedir estudio</button>
         <p class="formulario-respuesta" id="formulario-respuesta" role="status"></p>
       </form>
@@ -499,7 +504,7 @@
         <dl>
           <div><dt>Nave y oficina</dt><dd>Rúa da Corredoira 44, nave 2<br>36500 Lalín · Pontevedra</dd></div>
           <div><dt>Teléfono</dt><dd><a href="tel:+34986000000">986 00 00 00</a><br><span class="muestra">Número de muestra: no funciona.</span></dd></div>
-          <div><dt>Correo</dt><dd><a href="mailto:hola@solaina.example">hola@solaina.example</a></dd></div>
+          <div><dt>Correo</dt><dd><a href="mailto:hola@gnomon.example">hola@gnomon.example</a></dd></div>
           <div><dt>Horario</dt><dd>Lunes a viernes 08:30 – 18:30</dd></div>
           <div><dt>Zona</dt><dd>Deza, Tabeirós y Terra de Montes</dd></div>
         </dl>
@@ -520,7 +525,7 @@
   <div class="pie-rejilla">
     <div class="pie-marca">
       <img src="assets/logo.svg" width="52" height="52" alt="">
-      <p>SOLAINA<br><span>Instalación fotovoltaica · Lalín</span></p>
+      <p>GNOMON<br><span>Instalación fotovoltaica · Lalín</span></p>
     </div>
     <div>
       <h2>Dónde</h2>
@@ -528,7 +533,7 @@
     </div>
     <div>
       <h2>Contacto</h2>
-      <p><a href="tel:+34986000000">986 00 00 00</a><br><a href="mailto:hola@solaina.example">hola@solaina.example</a></p>
+      <p><a href="tel:+34986000000">986 00 00 00</a><br><a href="mailto:hola@gnomon.example">hola@gnomon.example</a></p>
     </div>
     <div>
       <h2>Horario</h2>
@@ -539,7 +544,7 @@
       <p><a href="aviso-legal.html">Aviso legal y privacidad</a><br><a href="#inicio">Volver arriba</a></p>
     </div>
   </div>
-  <p class="sello">Sitio de demostración. SOLAINA es un negocio ficticio; los datos, precios, casos de
+  <p class="sello">Sitio de demostración. GNOMON es un negocio ficticio; los datos, precios, casos de
     ejemplo y cifras de producción son de muestra y no corresponden a ninguna empresa ni instalación real.
     <strong>Ninguna cifra de esta página es una promesa de ahorro.</strong></p>
 </footer>

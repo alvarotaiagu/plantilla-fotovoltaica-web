@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SOLAINA — plantilla de demostración (negocio ficticio)
+   GNOMON — plantilla de demostración (negocio ficticio)
    Concepto «Sombra»: lo que decide una instalación fotovoltaica no es el sol,
    es la sombra. Nada de promesas de ahorro.
    ========================================================================== */
@@ -431,3 +431,7 @@ html.has-motion .cursor{display:flex;}
   html.has-motion [data-aparecer]{opacity:1;transform:none;}
   .cursor{display:none !important;}
 }
+
+/* nota al pie de un bloque de texto: el mismo humo, un cuerpo menor */
+.parrafo--nota{font-size:.92rem;color:var(--humo);border-left:2px solid var(--verde);padding-left:14px;}
+.parrafo--nota b{color:var(--hueso);font-weight:600;}
