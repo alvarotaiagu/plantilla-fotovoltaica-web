@@ -82,6 +82,19 @@ Todos salen del concepto; ninguno está puesto por rellenar.
 8. **Lenis** como único motor de scroll, con `lerp: 0.17` por llevar una escena
    con `scrub`.
 
+### Coste de todo eso
+
+Medido con un `PerformanceObserver` de `longtask` inyectado antes de cargar:
+
+| Momento | Tareas largas | Peor |
+|---|---|---|
+| Arranque (primeros 3 s) | 1 | 92 ms |
+| Recorriendo el día (≈25 s con la escena anclada) | **0** | — |
+
+La única tarea larga es el arranque de GSAP y las tipografías, no el estudio de
+sombras: el recálculo por fotograma son veinte comprobaciones geométricas y dos
+`setAttribute`, sin filtros ni sombras de canvas.
+
 ### Sin JavaScript, con GSAP bloqueado o con movimiento reducido
 
 La página **se lee entera**. Los estados vacíos (texto oculto para revelarlo, etc.)
