@@ -140,7 +140,7 @@ recuento se escriben igual, y los contadores muestran su cifra final.
 ```
 index.html          portada
 aviso-legal.html    aviso legal y privacidad
-404.html            página de error (rutas absolutas: se sirve desde cualquier ruta)
+404.html            página de error
 css/style.css       toda la hoja de estilos
 js/main.js          contenido, el estudio de sombras y el movimiento
 assets/             logo, favicon, tres ilustraciones de aparatos y la imagen para compartir
