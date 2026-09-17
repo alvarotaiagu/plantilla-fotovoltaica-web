@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240" role="img"
+     aria-label="Ilustración de un perfil de estructura de aluminio con sus tornillos.">
+  <title>Perfil de estructura y tornillería</title>
+  <rect width="360" height="240" fill="#0C100F"/>
+  <g stroke="#242B29" stroke-width="1">
+    <path d="M0 40H360M0 80H360M0 120H360M0 160H360M0 200H360"/>
+    <path d="M40 0V240M80 0V240M120 0V240M160 0V240M200 0V240M240 0V240M280 0V240M320 0V240"/>
+  </g>
+
+  <!-- sección del perfil: la ranura en C vista de frente -->
+  <g transform="translate(34,40)">
+    <path d="M0 0H92V26H62V44H92V92H0Z" fill="#151A19" stroke="#EDF2F0" stroke-width="2.5"
+          stroke-linejoin="round"/>
+    <path d="M14 14H78M14 78H78" stroke="#39423F" stroke-width="2"/>
+    <path d="M62 26H92M62 44H92" stroke="#17E08A" stroke-width="2.5"/>
+    <text x="46" y="66" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace"
+          font-size="10" fill="#A6B0AC">40x40</text>
+  </g>
+  <g stroke="#39423F" stroke-width="1.5">
+    <path d="M34 146 34 158M126 146 126 158M34 152H126"/>
+  </g>
+  <text x="80" y="174" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace"
+        font-size="10" fill="#A6B0AC">perfil</text>
+
+  <!-- tramo de perfil en perspectiva -->
+  <g transform="translate(150,52)">
+    <path d="M0 18 22 0H186V18Z" fill="#101413" stroke="#A6B0AC" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M0 18H186V46H0Z" fill="#151A19" stroke="#EDF2F0" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M0 30H186" stroke="#17E08A" stroke-width="2.5"/>
+    <g stroke="#39423F" stroke-width="2"><path d="M34 18V46M92 18V46M150 18V46"/></g>
+  </g>
+
+  <!-- tornillo de cabeza hexagonal -->
+  <g transform="translate(168,140)">
+    <path d="M18 0 34 9V27L18 36 2 27V9Z" fill="#151A19" stroke="#EDF2F0" stroke-width="2.5"
+          stroke-linejoin="round"/>
+    <circle cx="18" cy="18" r="7" fill="none" stroke="#17E08A" stroke-width="2"/>
+    <path d="M10 36h16v42h-16Z" fill="#101413" stroke="#A6B0AC" stroke-width="2"/>
+    <g stroke="#39423F" stroke-width="1.6">
+      <path d="M10 44h16M10 52h16M10 60h16M10 68h16"/>
+    </g>
+  </g>
+
+  <!-- grapa de fijación -->
+  <g transform="translate(240,150)">
+    <path d="M0 40V12a12 12 0 0 1 24 0v28" fill="none" stroke="#EDF2F0" stroke-width="2.5"/>
+    <path d="M24 40V12a12 12 0 0 1 24 0v28" fill="none" stroke="#A6B0AC" stroke-width="2.5"/>
+    <path d="M-8 40H56" stroke="#17E08A" stroke-width="3" stroke-linecap="round"/>
+    <text x="24" y="62" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace"
+          font-size="10" fill="#A6B0AC">grapa</text>
+  </g>
+</svg>

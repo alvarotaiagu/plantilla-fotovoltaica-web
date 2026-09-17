@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>og SOLAINA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;background:#0A0D0C;color:#EDF2F0;font-family:Archivo,sans-serif;
+       overflow:hidden;position:relative}
+  .malla{position:absolute;inset:0;
+    background-image:linear-gradient(#242B29 1px,transparent 1px),linear-gradient(90deg,#242B29 1px,transparent 1px);
+    background-size:60px 60px;opacity:.55}
+  .caja{position:absolute;inset:0;padding:64px 70px;display:flex;flex-direction:column;justify-content:space-between}
+  .alto{display:flex;align-items:center;gap:18px;font-family:'JetBrains Mono',monospace;
+        font-size:19px;letter-spacing:.16em;text-transform:uppercase;color:#A6B0AC}
+  .alto b{background:#17E08A;color:#0A0D0C;padding:5px 12px;letter-spacing:.14em;font-weight:500}
+  h1{font-size:96px;line-height:.94;font-weight:800;letter-spacing:-.03em;max-width:15ch}
+  h1 em{font-style:normal;color:#17E08A}
+  .bajo{display:flex;align-items:flex-end;justify-content:space-between;gap:30px}
+  .bajo p{font-family:'JetBrains Mono',monospace;font-size:17px;color:#A6B0AC;line-height:1.6;max-width:44ch}
+  .sello{font-family:'JetBrains Mono',monospace;font-size:14px;color:#0A0D0C;background:#A6B0AC;
+         padding:6px 12px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+  /* el tejado, a la derecha, medio en sombra */
+  .tejado{position:absolute;right:-70px;top:120px;width:470px;height:360px;transform:rotate(-8deg)}
+  .rej{position:absolute;inset:0;display:grid;grid-template-columns:repeat(5,1fr);
+       grid-template-rows:repeat(4,1fr);gap:12px}
+  .rej i{background:#151A19;border:2px solid #39423F}
+  .rej i.sol{background:#17E08A;border-color:#17E08A}
+  .sombra{position:absolute;left:-60px;top:-60px;width:300px;height:520px;
+          background:#0A0D0C;opacity:.92;transform:rotate(22deg)}
+</style>
+</head>
+<body>
+  <div class="malla"></div>
+
+  <div class="tejado">
+    <div class="rej">
+      <i class="sol"></i><i class="sol"></i><i class="sol"></i><i class="sol"></i><i class="sol"></i>
+      <i></i><i class="sol"></i><i class="sol"></i><i class="sol"></i><i class="sol"></i>
+      <i></i><i></i><i class="sol"></i><i class="sol"></i><i class="sol"></i>
+      <i></i><i></i><i></i><i class="sol"></i><i class="sol"></i>
+    </div>
+    <div class="sombra"></div>
+  </div>
+
+  <div class="caja">
+    <div class="alto"><b>SOLAINA</b> <span>Instalación fotovoltaica · Lalín</span></div>
+    <h1>Lo que decide<br>una instalación<br>no es el sol.<br><em>Es la sombra.</em></h1>
+    <div class="bajo">
+      <p>Estudio de sombras hora a hora antes de<br>presupuestar nada. 20 módulos de ejemplo.</p>
+      <span class="sello">Sitio de demostración · negocio ficticio</span>
+    </div>
+  </div>
+</body>
+</html>

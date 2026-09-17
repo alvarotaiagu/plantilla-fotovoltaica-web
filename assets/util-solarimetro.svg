@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240" role="img"
+     aria-label="Ilustración de un medidor de irradiancia solar con su pantalla.">
+  <title>Medidor de irradiancia</title>
+  <rect width="360" height="240" fill="#0C100F"/>
+  <g stroke="#242B29" stroke-width="1">
+    <path d="M0 40H360M0 80H360M0 120H360M0 160H360M0 200H360"/>
+    <path d="M40 0V240M80 0V240M120 0V240M160 0V240M200 0V240M240 0V240M280 0V240M320 0V240"/>
+  </g>
+
+  <!-- célula sensora, arriba, con su cable -->
+  <g>
+    <rect x="228" y="44" width="72" height="42" rx="3" fill="#151A19" stroke="#A6B0AC" stroke-width="2"/>
+    <path d="M240 52H288M240 62H288M240 72H288" stroke="#39423F" stroke-width="2"/>
+    <rect x="252" y="50" width="24" height="30" fill="#17E08A" opacity=".2"/>
+    <path d="M264 86v16c0 14-22 10-22 24v8" fill="none" stroke="#A6B0AC" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- rayos: el sol que se está midiendo -->
+  <g stroke="#17E08A" stroke-width="2.5" stroke-linecap="round">
+    <path d="M212 22 226 40M264 14 264 34M316 22 302 40"/>
+  </g>
+
+  <!-- cuerpo del aparato -->
+  <g>
+    <rect x="52" y="58" width="150" height="152" rx="10" fill="#151A19" stroke="#EDF2F0" stroke-width="2.5"/>
+    <rect x="68" y="76" width="118" height="56" rx="3" fill="#0A0D0C" stroke="#39423F" stroke-width="2"/>
+    <text x="176" y="112" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,monospace"
+          font-size="27" font-weight="500" fill="#17E08A">842</text>
+    <text x="176" y="126" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,monospace"
+          font-size="10" fill="#A6B0AC">W/m2</text>
+    <text x="78" y="96" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="9" fill="#39423F">IRRAD.</text>
+    <!-- teclado -->
+    <g fill="#0A0D0C" stroke="#39423F" stroke-width="2">
+      <rect x="68" y="148" width="50" height="22" rx="4"/>
+      <rect x="136" y="148" width="50" height="22" rx="4"/>
+      <rect x="68" y="180" width="118" height="18" rx="4"/>
+    </g>
+    <circle cx="93" cy="159" r="4" fill="#17E08A"/>
+    <path d="M152 159h18M161 152v14" stroke="#A6B0AC" stroke-width="2"/>
+  </g>
+
+  <!-- inclinómetro suelto, al lado -->
+  <g transform="translate(232,150)">
+    <rect x="0" y="0" width="86" height="54" rx="4" fill="#151A19" stroke="#A6B0AC" stroke-width="2"/>
+    <path d="M8 46 78 46" stroke="#39423F" stroke-width="2"/>
+    <path d="M8 46 62 18" stroke="#17E08A" stroke-width="2.5"/>
+    <path d="M8 46a34 34 0 0 1 14-24" fill="none" stroke="#EDF2F0" stroke-width="1.5"/>
+    <text x="30" y="40" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10" fill="#EDF2F0">28°</text>
+  </g>
+</svg>

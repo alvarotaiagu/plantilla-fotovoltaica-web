@@ -1,0 +1,15 @@
+{
+  "name": "SOLAINA · Instalación fotovoltaica (demostración)",
+  "short_name": "SOLAINA",
+  "description": "Plantilla de demostración de una empresa instaladora fotovoltaica ficticia, construida alrededor del estudio de sombras de un tejado.",
+  "lang": "es",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0A0D0C",
+  "theme_color": "#0A0D0C",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/og.png", "sizes": "1200x630", "type": "image/png" }
+  ]
+}

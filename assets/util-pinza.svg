@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240" role="img"
+     aria-label="Ilustración de una pinza amperimétrica.">
+  <title>Pinza amperimétrica</title>
+  <rect width="360" height="240" fill="#0C100F"/>
+  <g stroke="#242B29" stroke-width="1">
+    <path d="M0 40H360M0 80H360M0 120H360M0 160H360M0 200H360"/>
+    <path d="M40 0V240M80 0V240M120 0V240M160 0V240M200 0V240M240 0V240M280 0V240M320 0V240"/>
+  </g>
+
+  <!-- el cable que se está midiendo, atravesando la mordaza -->
+  <path d="M12 62h336" stroke="#39423F" stroke-width="13" stroke-linecap="round"/>
+  <path d="M12 62h336" stroke="#17E08A" stroke-width="3" stroke-dasharray="14 12" opacity=".7"/>
+
+  <!-- mordaza -->
+  <g fill="none" stroke="#EDF2F0" stroke-width="2.5" stroke-linecap="round">
+    <path d="M150 62a30 30 0 0 1 60 0v6"/>
+    <path d="M150 62v6"/>
+  </g>
+  <path d="M150 62a30 30 0 0 1 60 0" fill="none" stroke="#151A19" stroke-width="13"/>
+  <path d="M150 62a30 30 0 0 1 60 0" fill="none" stroke="#A6B0AC" stroke-width="2"/>
+
+  <!-- cuerpo -->
+  <g>
+    <rect x="140" y="68" width="80" height="150" rx="14" fill="#151A19" stroke="#EDF2F0" stroke-width="2.5"/>
+    <rect x="152" y="84" width="56" height="40" rx="3" fill="#0A0D0C" stroke="#39423F" stroke-width="2"/>
+    <text x="200" y="112" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,monospace"
+          font-size="19" font-weight="500" fill="#17E08A">6.2</text>
+    <text x="158" y="98" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="8" fill="#39423F">A~</text>
+    <!-- rueda de rangos -->
+    <circle cx="180" cy="158" r="22" fill="#0A0D0C" stroke="#A6B0AC" stroke-width="2"/>
+    <circle cx="180" cy="158" r="6" fill="#39423F"/>
+    <path d="M180 158 180 140" stroke="#17E08A" stroke-width="3" stroke-linecap="round"/>
+    <g stroke="#39423F" stroke-width="2" stroke-linecap="round">
+      <path d="M163 145 167 149M197 145 193 149M158 162 164 162M202 162 196 162"/>
+    </g>
+    <rect x="156" y="190" width="48" height="12" rx="6" fill="#0A0D0C" stroke="#39423F" stroke-width="2"/>
+  </g>
+
+  <!-- puntas de prueba -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M160 218c-24 8-44 0-58 14" stroke="#A6B0AC" stroke-width="4"/>
+    <path d="M200 218c24 8 44 0 58 14" stroke="#17E08A" stroke-width="4"/>
+  </g>
+  <g stroke="#EDF2F0" stroke-width="3" stroke-linecap="round">
+    <path d="M102 232 88 232M258 232 272 232"/>
+  </g>
+</svg>

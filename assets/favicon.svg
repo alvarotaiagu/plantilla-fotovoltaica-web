@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs><clipPath id="marco-ico"><rect x="10" y="10" width="44" height="44" rx="5"/></clipPath></defs>
+  <rect width="64" height="64" rx="12" fill="#0A0D0C"/>
+  <g clip-path="url(#marco-ico)">
+    <rect x="10" y="10" width="44" height="44" fill="#17E08A"/>
+    <path d="M54 18 54 54 12 54Z" fill="#0C3B2A"/>
+  </g>
+  <g stroke="#0A0D0C" stroke-width="2"><path d="M10 24.6H54M10 39.3H54M24.6 10V54M39.3 10V54"/></g>
+  <rect x="10" y="10" width="44" height="44" rx="5" fill="none" stroke="#EDF2F0" stroke-width="2.6"/>
+</svg>

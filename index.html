@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  SITIO DE DEMOSTRACIÓN. SOLAINA es una empresa de instalación fotovoltaica
+  FICTICIA. Nombre, dirección, teléfono, horarios, precios, casos de ejemplo y
+  equipo son datos de muestra inventados para enseñar la plantilla. No
+  corresponden a ninguna empresa real ni a ninguna instalación real.
+  Ninguna cifra de ahorro de esta página es una promesa: ver README.md.
+  ============================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLAINA · Instaladores fotovoltaicos en Lalín (demo)</title>
+<meta name="description" content="Plantilla de demostración de una empresa de instalación fotovoltaica ficticia: estudio de sombras, equipos, papeles y casos de ejemplo. Todos los datos son de muestra.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0D0C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SOLAINA · Instaladores fotovoltaicos (sitio de demostración)">
+<meta property="og:description" content="Negocio ficticio. Lo que decide una instalación no es el sol: es la sombra.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "SOLAINA",
+  "description": "Empresa de instalación fotovoltaica ficticia usada como plantilla de demostración.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rúa da Corredoira 44, nave 2",
+    "addressLocality": "Lalín",
+    "addressRegion": "Pontevedra",
+    "postalCode": "36500",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34986000000",
+  "email": "hola@solaina.example",
+  "priceRange": "€€",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "18:30" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-punto"></span><span class="cursor-texto" id="cursor-texto"></span></div>
+
+<header class="cabecera" id="cabecera">
+  <a class="marca" href="#inicio" aria-label="SOLAINA, inicio">
+    <img src="assets/logo.svg" width="52" height="52" alt="" class="marca-mark">
+    <span class="marca-texto">SOLAINA<em>instalación fotovoltaica · Lalín</em></span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Principal">
+    <ul class="nav-lista">
+      <li><a href="#sombra">La sombra</a></li>
+      <li><a href="#equipos">Qué se monta</a></li>
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#papeles">Papeles</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#visita">Visita</a></li>
+    </ul>
+    <a class="boton boton--verde nav-cta" href="#visita" data-iman>Pedir estudio</a>
+  </nav>
+
+  <button class="hamburguesa" id="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="contenido">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio">
+    <div class="hero-texto">
+      <p class="sobretitulo" data-aparecer>Instalación fotovoltaica · Lalín · Pontevedra · desde 2016</p>
+      <h1 class="titular titular--hero" data-revelar>Lo que decide tu instalación no es el sol: es la sombra</h1>
+      <p class="parrafo parrafo--grande" data-aparecer>Todo el mundo enseña paneles al mediodía de julio. Nosotros
+        empezamos midiendo la chimenea, el castaño del vecino y el alero, porque una sombra de dos horas
+        sobre la fila mala se lleva por delante media producción. Primero el estudio; los números, después.</p>
+      <div class="hero-acciones" data-aparecer>
+        <a class="boton boton--verde" href="#visita" data-iman>Pedir estudio de sombras</a>
+        <a class="boton boton--linea" href="#sombra" data-iman>Ver cómo se mide</a>
+      </div>
+      <dl class="hero-datos" data-aparecer>
+        <div><dt>Estudio previo</dt><dd>gratuito, con informe de sombras por horas</dd></div>
+        <div><dt>Montaje</dt><dd>dos o tres días según tejado</dd></div>
+        <div><dt>Legalización</dt><dd>la hacemos nosotros, incluida</dd></div>
+      </dl>
+    </div>
+
+    <figure class="reloj" aria-hidden="true">
+      <svg viewBox="0 0 320 320" class="reloj-svg">
+        <circle cx="160" cy="160" r="150" fill="none" stroke="#242B29" stroke-width="2"/>
+        <circle cx="160" cy="160" r="118" fill="none" stroke="#1B2120" stroke-width="1"/>
+        <path d="M30 240 A 150 150 0 0 1 290 240" fill="none" stroke="#17E08A" stroke-width="3" stroke-dasharray="5 9"/>
+        <g class="reloj-horas">
+          <text x="34" y="262" class="reloj-txt">08:00</text>
+          <text x="140" y="34" class="reloj-txt">14:00</text>
+          <text x="238" y="262" class="reloj-txt">20:00</text>
+        </g>
+        <circle class="reloj-sol" cx="160" cy="42" r="13" fill="#17E08A"/>
+        <path d="M60 246 h200 l-14 26 h-172 z" fill="#131817" stroke="#39423F" stroke-width="2"/>
+        <path d="M96 246 v26 M132 246 v26 M168 246 v26 M204 246 v26" stroke="#39423F" stroke-width="1"/>
+      </svg>
+      <figcaption>El día entero, no el mediodía de julio.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================= FRANJA ================= -->
+  <section class="franja" aria-label="Servicios">
+    <div class="franja-pista" id="franja-pista">
+      <div class="franja-grupo">
+        <span>Estudio de sombras</span><i aria-hidden="true"></i><span>Montaje</span><i aria-hidden="true"></i><span>Legalización</span><i aria-hidden="true"></i><span>Monitorización</span><i aria-hidden="true"></i><span>Mantenimiento</span><i aria-hidden="true"></i>
+      </div>
+      <div class="franja-grupo" aria-hidden="true">
+        <span>Estudio de sombras</span><i></i><span>Montaje</span><i></i><span>Legalización</span><i></i><span>Monitorización</span><i></i><span>Mantenimiento</span><i></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LA SOMBRA (protagonista) ================= -->
+  <section class="sombra" id="sombra">
+    <div class="sombra-cab">
+      <p class="rotulo"><span>01</span> La sombra</p>
+      <h2 class="titular" data-revelar>Un día entero sobre tu tejado</h2>
+      <p class="parrafo">Este es el estudio que hacemos antes de dar un solo número: el sol recorre el día,
+        la sombra de la chimenea y del árbol barre el tejado, y se apunta qué paneles quedan tapados y a
+        qué hora. Baja y pasa el día.</p>
+    </div>
+
+    <div class="sombra-escena" id="sombra-escena">
+      <div class="sombra-lienzo" data-scroll-teclado role="group" aria-label="Estudio de sombras sobre el tejado; se recorre en horizontal">
+        <svg class="tejado" id="tejado" viewBox="0 0 1000 520" role="img"
+             aria-label="Vista cenital de un tejado con veinte paneles, una chimenea y un árbol; la sombra recorre el tejado según la hora.">
+          <rect x="14" y="14" width="972" height="492" rx="4" fill="#101413" stroke="#242B29" stroke-width="2"/>
+          <g class="tejado-trama" aria-hidden="true">
+            <path d="M14 94h972M14 174h972M14 254h972M14 334h972M14 414h972M94 14v492M174 14v492M254 14v492M334 14v492M414 14v492M494 14v492M574 14v492M654 14v492M734 14v492M814 14v492M894 14v492"
+                  stroke="#181D1C" stroke-width="1"/>
+          </g>
+
+          <!-- faldón -->
+          <path d="M120 90 h600 l60 340 h-720 z" fill="#151A19" stroke="#39423F" stroke-width="3"/>
+          <text x="132" y="78" class="tejado-txt">FALDÓN SUR · 32° DE INCLINACIÓN</text>
+
+          <!-- sombra proyectada (la mueve el JS) -->
+          <g id="sombras" aria-hidden="true">
+            <rect id="sombra-chimenea" x="-38" y="0" width="76" height="1" fill="#050706" opacity=".8" transform="translate(430,150) rotate(0) scale(1,70)"/>
+            <ellipse id="sombra-arbol" cx="0" cy="0" rx="86" ry="52" fill="#050706" opacity=".7" transform="translate(812,338.5)"/>
+          </g>
+
+          <!-- paneles -->
+          <g id="paneles">
+            <g class="panel" data-panel="1"><rect x="150" y="190" width="96" height="46" rx="3"/><path d="M150 213h96M198 190v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="2"><rect x="262" y="190" width="96" height="46" rx="3"/><path d="M262 213h96M310 190v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="3"><rect x="374" y="190" width="96" height="46" rx="3"/><path d="M374 213h96M422 190v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="4"><rect x="486" y="190" width="96" height="46" rx="3"/><path d="M486 213h96M534 190v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="5"><rect x="598" y="190" width="96" height="46" rx="3"/><path d="M598 213h96M646 190v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="6"><rect x="150" y="248" width="96" height="46" rx="3"/><path d="M150 271h96M198 248v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="7"><rect x="262" y="248" width="96" height="46" rx="3"/><path d="M262 271h96M310 248v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="8"><rect x="374" y="248" width="96" height="46" rx="3"/><path d="M374 271h96M422 248v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="9"><rect x="486" y="248" width="96" height="46" rx="3"/><path d="M486 271h96M534 248v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="10"><rect x="598" y="248" width="96" height="46" rx="3"/><path d="M598 271h96M646 248v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="11"><rect x="150" y="306" width="96" height="46" rx="3"/><path d="M150 329h96M198 306v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="12"><rect x="262" y="306" width="96" height="46" rx="3"/><path d="M262 329h96M310 306v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="13"><rect x="374" y="306" width="96" height="46" rx="3"/><path d="M374 329h96M422 306v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="14"><rect x="486" y="306" width="96" height="46" rx="3"/><path d="M486 329h96M534 306v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="15"><rect x="598" y="306" width="96" height="46" rx="3"/><path d="M598 329h96M646 306v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="16"><rect x="150" y="364" width="96" height="46" rx="3"/><path d="M150 387h96M198 364v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="17"><rect x="262" y="364" width="96" height="46" rx="3"/><path d="M262 387h96M310 364v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="18"><rect x="374" y="364" width="96" height="46" rx="3"/><path d="M374 387h96M422 364v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="19"><rect x="486" y="364" width="96" height="46" rx="3"/><path d="M486 387h96M534 364v46" class="panel-linea"/></g>
+            <g class="panel" data-panel="20"><rect x="598" y="364" width="96" height="46" rx="3"/><path d="M598 387h96M646 364v46" class="panel-linea"/></g>
+          </g>
+
+          <!-- obstáculos -->
+          <g class="obstaculo">
+            <rect x="404" y="120" width="52" height="52" rx="3" fill="#1C2321" stroke="#6D7975" stroke-width="3"/>
+            <path d="M404 146 h52 M430 120 v52" stroke="#39423F" stroke-width="2"/>
+            <text x="366" y="112" class="tejado-txt">CHIMENEA</text>
+          </g>
+          <g class="obstaculo">
+            <circle cx="812" cy="300" r="44" fill="#141A18" stroke="#6D7975" stroke-width="3"/>
+            <path d="M812 344 v42" stroke="#6D7975" stroke-width="5"/>
+            <text x="748" y="406" class="tejado-txt">CASTAÑO DEL VECINO</text>
+            <text x="748" y="424" class="tejado-txt">(AL ESTE)</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="sombra-panel">
+        <p class="sombra-hora" id="sombra-hora">14:00</p>
+        <p class="sombra-estado" id="sombra-estado" role="status">los 20 paneles al sol · es la mejor franja del día</p>
+        <ul class="sombra-notas">
+          <li><b>Mañana</b> · con el sol al este, el castaño del vecino se come la esquina derecha y la
+            chimenea alarga su sombra sobre la columna de la izquierda.</li>
+          <li><b>Mediodía</b> · las sombras se acortan y el faldón trabaja entero: es la franja que más
+            produce y la que casi nadie mira.</li>
+          <li><b>Tarde</b> · el sol cae al oeste y la chimenea vuelve a tapar, esta vez hacia la derecha.</li>
+        </ul>
+        <p class="sombra-aviso">Simulación de muestra escrita para esta demostración: un tejado inventado y
+          una sombra aproximada. El estudio real se hace en tu tejado, con la orientación y la altura de
+          cada obstáculo medidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EQUIPOS ================= -->
+  <section class="equipos" id="equipos">
+    <div class="equipos-cab">
+      <p class="rotulo"><span>02</span> Qué se monta</p>
+      <h2 class="titular" data-revelar>Cuatro cosas, y ninguna es un milagro</h2>
+      <p class="parrafo">No trabajamos con una sola marca ni tenemos «la placa mágica». Lo que cambia una
+        instalación es dónde se pone y cómo se sujeta, no el logotipo del panel.</p>
+    </div>
+    <ul class="rejilla-equipos">
+      <li class="equipo">
+        <p class="equipo-clave">01</p>
+        <h3>Paneles</h3>
+        <p>Monocristalinos de 430 a 460 W, con 25 años de garantía de producto y de rendimiento del
+          fabricante. La potencia real depende del tejado, no del catálogo.</p>
+        <dl>
+          <div><dt>Potencia</dt><dd>430–460 W</dd></div>
+          <div><dt>Garantía</dt><dd>25 años</dd></div>
+        </dl>
+      </li>
+      <li class="equipo">
+        <p class="equipo-clave">02</p>
+        <h3>Inversor</h3>
+        <p>Con optimizadores por panel cuando hay sombras parciales: si una fila se tapa, el resto sigue
+          trabajando. Es justo la pieza que evita que una chimenea arruine una instalación.</p>
+        <dl>
+          <div><dt>Garantía</dt><dd>10 años ampliables</dd></div>
+          <div><dt>Monitor</dt><dd>por panel</dd></div>
+        </dl>
+      </li>
+      <li class="equipo">
+        <p class="equipo-clave">03</p>
+        <h3>Batería (opcional)</h3>
+        <p>De 5 a 10 kWh. No siempre sale a cuenta: si consumes de día, puede sobrar. Te decimos cuándo
+          no la necesitas, aunque sea la parte más cara del presupuesto.</p>
+        <dl>
+          <div><dt>Capacidad</dt><dd>5–10 kWh</dd></div>
+          <div><dt>Garantía</dt><dd>10 años</dd></div>
+        </dl>
+      </li>
+      <li class="equipo">
+        <p class="equipo-clave">04</p>
+        <h3>Estructura y sujeción</h3>
+        <p>Aluminio y tornillería de acero inoxidable, con el cálculo de viento del sitio. En Galicia el
+          viento manda más que el granizo, y una estructura floja se ve a los dos inviernos.</p>
+        <dl>
+          <div><dt>Material</dt><dd>aluminio + inox</dd></div>
+          <div><dt>Cálculo</dt><dd>viento por zona</dd></div>
+        </dl>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= CASOS ================= -->
+  <section class="casos" id="casos">
+    <div class="casos-cab">
+      <p class="rotulo"><span>03</span> Casos</p>
+      <h2 class="titular" data-revelar>Tres ejemplos, y lo que no dicen</h2>
+      <div class="aviso-ahorro">
+        <p><strong>Antes de la tabla:</strong> estos tres casos son <strong>inventados para esta
+          demostración</strong>. Ni son clientes reales ni son una previsión para tu casa. Lo que ahorra
+          una instalación depende de cuánto consumes, <em>a qué hora</em> lo consumes y de la sombra que
+          tenga tu tejado; por eso no publicamos porcentajes de ahorro y sí el estudio previo.</p>
+      </div>
+    </div>
+
+    <table class="tabla">
+      <caption class="visual-oculto">Tres casos de ejemplo inventados, con consumo, potencia instalada y producción estimada</caption>
+      <thead>
+        <tr>
+          <th scope="col">Caso de ejemplo</th>
+          <th scope="col">Consumo al año</th>
+          <th scope="col">Potencia</th>
+          <th scope="col">Producción estimada</th>
+          <th scope="col">Lo que no dice</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Piso con gas</th>
+          <td>2.400 kWh</td>
+          <td>2,2 kWp</td>
+          <td>2.700 kWh/año</td>
+          <td>Consume de noche: sin batería, se vierte más de la mitad.</td>
+        </tr>
+        <tr>
+          <th scope="row">Casa con bomba de calor</th>
+          <td>7.800 kWh</td>
+          <td>5,5 kWp</td>
+          <td>6.600 kWh/año</td>
+          <td>El invierno es el que manda, y es cuando menos se produce.</td>
+        </tr>
+        <tr>
+          <th scope="row">Taller pequeño</th>
+          <td>14.000 kWh</td>
+          <td>12 kWp</td>
+          <td>14.500 kWh/año</td>
+          <td>Trabaja de día: es el caso en el que mejor encaja.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="nota">Cifras de ejemplo, inventadas. La producción estimada sale de una simulación tipo para
+      esta demostración, no de una medición. No hay dos tejados iguales.</p>
+  </section>
+
+  <!-- ================= PAPELES ================= -->
+  <section class="papeles" id="papeles">
+    <div class="papeles-cab">
+      <p class="rotulo"><span>04</span> Papeles</p>
+      <h2 class="titular" data-revelar>Lo que va detrás de la instalación</h2>
+      <p class="parrafo">La parte que no se ve en las fotos y que decide si la instalación está bien hecha.
+        La hacemos nosotros y va en el presupuesto.</p>
+    </div>
+    <ol class="lista-papeles">
+      <li><p class="papel-num">01</p><h3>Memoria técnica y boletín</h3><p>Firmados por técnico competente. Sin eso, la instalación no existe para nadie más que para ti.</p></li>
+      <li><p class="papel-num">02</p><h3>Registro y CAU</h3><p>El código que identifica tu instalación de autoconsumo. Es lo que permite lo siguiente.</p></li>
+      <li><p class="papel-num">03</p><h3>Compensación de excedentes</h3><p>El acuerdo con tu comercializadora para que lo que viertes te descuente en la factura. Lo tramitamos, pero el precio lo pone ella.</p></li>
+      <li><p class="papel-num">04</p><h3>Ayudas y licencias</h3><p>Preparamos la documentación de las convocatorias que estén abiertas y la licencia o comunicación del ayuntamiento. No prometemos plazos: no dependen de nosotros.</p></li>
+    </ol>
+  </section>
+
+  <!-- ================= EQUIPO ================= -->
+  <section class="gente" id="gente">
+    <div class="gente-cab">
+      <p class="rotulo"><span>05</span> Quién sube al tejado</p>
+      <h2 class="titular" data-revelar>Tres personas y sus aparatos</h2>
+      <p class="parrafo">Somos los mismos que vamos a medir y los que volvemos a montar. Aquí nadie se
+        presenta con una foto de archivo, así que cada uno se presenta con lo que lleva en la mano.</p>
+    </div>
+    <ul class="equipo-fichas">
+      <li>
+        <img src="assets/util-solarimetro.svg" width="360" height="240" loading="lazy"
+             alt="Ilustración de un medidor de irradiancia solar con su pantalla.">
+        <div class="ficha-pie">
+          <h3>Marisa Vilar</h3>
+          <p class="ficha-rol">Estudio previo y diseño</p>
+          <p>Sube con el medidor y el inclinómetro, y dibuja el reparto de paneles. Es quien dice que no
+            cuando un tejado no da.</p>
+        </div>
+      </li>
+      <li>
+        <img src="assets/util-pinza.svg" width="360" height="240" loading="lazy"
+             alt="Ilustración de una pinza amperimétrica.">
+        <div class="ficha-pie">
+          <h3>Xoán Ferradás</h3>
+          <p class="ficha-rol">Instalación eléctrica y puesta en marcha</p>
+          <p>Cuadro, protecciones e inversor. Hace la prueba de aislamiento delante de ti y te enseña el
+            primer dato de producción.</p>
+        </div>
+      </li>
+      <li>
+        <img src="assets/util-estructura.svg" width="360" height="240" loading="lazy"
+             alt="Ilustración de un perfil de estructura de aluminio con sus tornillos.">
+        <div class="ficha-pie">
+          <h3>Iria Cachafeiro</h3>
+          <p class="ficha-rol">Estructura, cubierta y mantenimiento</p>
+          <p>Fija la estructura y repasa los anclajes al año. Si hay que tocar una teja, la toca ella.</p>
+        </div>
+      </li>
+    </ul>
+
+    <dl class="cifras" id="cifras">
+      <div><dt>instalaciones al año</dt><dd><span class="contador" data-hasta="60">60</span></dd></div>
+      <div><dt>años trabajando</dt><dd><span class="contador" data-hasta="10">10</span></dd></div>
+      <div><dt>días de montaje</dt><dd><span class="contador" data-hasta="3">3</span></dd></div>
+      <div><dt>revisión incluida</dt><dd><span class="contador" data-hasta="1">1</span></dd></div>
+    </dl>
+  </section>
+
+  <!-- ================= PRECIOS ================= -->
+  <section class="precios" id="precios">
+    <div class="precios-cab">
+      <p class="rotulo"><span>06</span> Precios</p>
+      <h2 class="titular" data-revelar>Precios de muestra, sin sorpresas</h2>
+      <p class="parrafo">Importes inventados para esta demostración. Incluyen material, montaje,
+        legalización y puesta en marcha; no incluyen obra civil ni refuerzos de cubierta, que se valoran
+        aparte si hacen falta.</p>
+    </div>
+    <table class="tabla">
+      <caption class="visual-oculto">Precios orientativos de muestra de la empresa ficticia SOLAINA</caption>
+      <thead>
+        <tr><th scope="col">Instalación</th><th scope="col">Qué incluye</th><th scope="col">Desde</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Estudio de sombras</th><td>Visita, medición e informe por horas</td><td><b>gratuito</b></td></tr>
+        <tr><th scope="row">2,2 kWp · 5 paneles</th><td>Material, montaje y legalización</td><td><b>3.400 €</b></td></tr>
+        <tr><th scope="row">5,5 kWp · 12 paneles</th><td>Material, montaje y legalización</td><td><b>6.900 €</b></td></tr>
+        <tr><th scope="row">12 kWp · 26 paneles</th><td>Material, montaje y legalización</td><td><b>13.800 €</b></td></tr>
+        <tr><th scope="row">Batería de 5 kWh</th><td>Equipo, montaje y configuración</td><td><b>3.900 €</b></td></tr>
+        <tr><th scope="row">Optimizadores</th><td>Por panel, para tejados con sombra</td><td><b>85 €</b></td></tr>
+        <tr><th scope="row">Revisión anual</th><td>Limpieza, apriete y revisión de producción</td><td><b>140 €</b></td></tr>
+        <tr><th scope="row">Refuerzo de cubierta</th><td>Se valora tras el estudio, si hace falta</td><td><b>a medida</b></td></tr>
+      </tbody>
+    </table>
+    <p class="nota">Precios ficticios, IVA no incluido. Las ayudas, cuando las hay, se descuentan después y
+      no las adelantamos nosotros.</p>
+  </section>
+
+  <!-- ================= PREGUNTAS ================= -->
+  <section class="preguntas" id="preguntas">
+    <div class="preguntas-cab">
+      <p class="rotulo"><span>07</span> Preguntas</p>
+      <h2 class="titular" data-revelar>Lo que se pregunta en el tejado</h2>
+    </div>
+    <div class="acordeon">
+      <details><summary>¿Cuánto voy a ahorrar?</summary>
+        <p>No lo sabemos hasta ver tu consumo por horas y la sombra de tu tejado, y desconfía de quien te
+          dé un porcentaje por teléfono. Lo que sí podemos decirte tras el estudio es cuánta energía
+          producirías y qué parte de tu consumo encaja con ella; el dinero depende de tu tarifa, que
+          cambia.</p></details>
+      <details><summary>¿Y si mi tejado no da?</summary>
+        <p>Te lo decimos y no montamos. Ha pasado: orientación norte con sombra de edificio, cubiertas de
+          fibrocemento que hay que retirar antes, o tejados donde solo caben cuatro paneles y no compensa.
+          El estudio es gratis justo para eso.</p></details>
+      <details><summary>¿Me quedo sin luz si hay un apagón?</summary>
+        <p>Con una instalación normal, sí: por seguridad se desconecta de la red. Solo si montas batería
+          con función de respaldo mantienes algunos circuitos. Es una pregunta que casi nadie hace antes de
+          firmar y conviene hacerla.</p></details>
+      <details><summary>¿Y el granizo y el viento?</summary>
+        <p>Los paneles aguantan granizo según norma y lo que de verdad hay que calcular aquí es el viento.
+          La estructura se dimensiona para la zona y se repasa en la revisión del primer año.</p></details>
+      <details><summary>¿Hay que limpiarlos?</summary>
+        <p>Con la lluvia de aquí, poco. Una vez al año se revisa suciedad, sombras nuevas —un árbol crece—
+          y apriete de la estructura. Eso es el mantenimiento, no una limpieza mensual.</p></details>
+      <details><summary>¿Cuánto dura la instalación?</summary>
+        <p>Los paneles tienen 25 años de garantía de rendimiento y el inversor 10. Al cabo de unos años el
+          inversor suele ser la primera pieza en cambiarse: conviene contarlo con eso desde el principio.</p></details>
+    </div>
+  </section>
+
+  <!-- ================= VISITA ================= -->
+  <section class="visita" id="visita">
+    <div class="visita-cab">
+      <p class="rotulo"><span>08</span> Visita</p>
+      <h2 class="titular" data-revelar>Empezamos por tu tejado</h2>
+      <p class="parrafo">Con la dirección, el tipo de cubierta y una factura de luz reciente ya podemos
+        preparar la visita. El estudio no cuesta nada y no obliga a nada.</p>
+    </div>
+
+    <div class="visita-rejilla">
+      <form class="formulario" id="formulario" novalidate>
+        <p class="formulario-aviso">Formulario de muestra: no envía nada a ningún servidor.</p>
+        <div class="campo-fila">
+          <div class="campo">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+          </div>
+          <div class="campo">
+            <label for="f-tel">Teléfono</label>
+            <input id="f-tel" name="telefono" type="tel" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="campo-fila">
+          <div class="campo">
+            <label for="f-cubierta">Tipo de cubierta</label>
+            <select id="f-cubierta" name="cubierta">
+              <option>Teja</option>
+              <option>Chapa</option>
+              <option>Plana transitable</option>
+              <option>Fibrocemento</option>
+              <option>No lo sé</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="f-consumo">Consumo al año (si lo sabes)</label>
+            <input id="f-consumo" name="consumo" type="text" placeholder="p. ej. 4.200 kWh">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="f-mensaje">Cuéntanos cómo es la casa</label>
+          <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        <label class="campo-check"><input type="checkbox" id="f-ok" name="ok" required> He leído el <a href="aviso-legal.html">aviso legal</a>.</label>
+        <button class="boton boton--verde" type="submit" data-iman>Pedir estudio</button>
+        <p class="formulario-respuesta" id="formulario-respuesta" role="status"></p>
+      </form>
+
+      <div class="visita-datos">
+        <dl>
+          <div><dt>Nave y oficina</dt><dd>Rúa da Corredoira 44, nave 2<br>36500 Lalín · Pontevedra</dd></div>
+          <div><dt>Teléfono</dt><dd><a href="tel:+34986000000">986 00 00 00</a><br><span class="muestra">Número de muestra: no funciona.</span></dd></div>
+          <div><dt>Correo</dt><dd><a href="mailto:hola@solaina.example">hola@solaina.example</a></dd></div>
+          <div><dt>Horario</dt><dd>Lunes a viernes 08:30 – 18:30</dd></div>
+          <div><dt>Zona</dt><dd>Deza, Tabeirós y Terra de Montes</dd></div>
+        </dl>
+
+        <div class="mapa" id="mapa">
+          <button class="boton boton--linea" type="button" id="mapa-boton" data-iman>Cargar el mapa de Google</button>
+          <p class="mapa-nota">El mapa no se carga hasta que lo pides: así esta página no pone cookies de
+            terceros por su cuenta. La dirección es inventada, así que el mapa muestra la localidad, no una
+            calle concreta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="pie-rejilla">
+    <div class="pie-marca">
+      <img src="assets/logo.svg" width="52" height="52" alt="">
+      <p>SOLAINA<br><span>Instalación fotovoltaica · Lalín</span></p>
+    </div>
+    <div>
+      <h2>Dónde</h2>
+      <p>Rúa da Corredoira 44, nave 2<br>36500 Lalín · Pontevedra</p>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <p><a href="tel:+34986000000">986 00 00 00</a><br><a href="mailto:hola@solaina.example">hola@solaina.example</a></p>
+    </div>
+    <div>
+      <h2>Horario</h2>
+      <p>L–V 08:30 – 18:30</p>
+    </div>
+    <div>
+      <h2>Legal</h2>
+      <p><a href="aviso-legal.html">Aviso legal y privacidad</a><br><a href="#inicio">Volver arriba</a></p>
+    </div>
+  </div>
+  <p class="sello">Sitio de demostración. SOLAINA es un negocio ficticio; los datos, precios, casos de
+    ejemplo y cifras de producción son de muestra y no corresponden a ninguna empresa ni instalación real.
+    <strong>Ninguna cifra de esta página es una promesa de ahorro.</strong></p>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+  <p>Esta web solo guarda en tu navegador que ya has visto este aviso. No hay cookies de terceros ni
+    analítica, y el mapa de Google se carga únicamente si pulsas su botón.</p>
+  <div class="cookie-acciones">
+    <button class="boton boton--verde" type="button" id="cookie-ok">De acuerdo</button>
+    <a class="cookie-mas" href="aviso-legal.html">Más información</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

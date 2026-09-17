@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- SITIO DE DEMOSTRACIÓN. SOLAINA es una empresa ficticia; todos los datos son de muestra. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esta página está en sombra · SOLAINA (demo)</title>
+<meta name="description" content="Página no encontrada en la plantilla de demostración SOLAINA.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0D0C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <a class="marca" href="/" aria-label="SOLAINA, inicio">
+    <img src="/assets/logo.svg" width="52" height="52" alt="" class="marca-mark">
+    <span class="marca-texto">SOLAINA<em>instalación fotovoltaica · Lalín</em></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <ul class="nav-lista">
+      <li><a href="/#sombra">La sombra</a></li>
+      <li><a href="/#equipos">Qué se monta</a></li>
+      <li><a href="/#precios">Precios</a></li>
+      <li><a href="/#visita">Visita</a></li>
+    </ul>
+    <a class="boton boton--verde nav-cta" href="/#visita" data-iman>Pedir estudio</a>
+  </nav>
+  <button class="hamburguesa" id="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="contenido">
+  <section class="error">
+    <p class="rotulo"><span>404</span> Fuera de cubierta</p>
+    <p class="error-num" aria-hidden="true">404</p>
+    <h1 class="titular">Esta página está en sombra</h1>
+    <p>Aquí no le da el sol a nada: la dirección que has pedido no existe en este sitio. Puede que el
+      enlace esté mal escrito o que la página se cambiara de sitio.</p>
+    <p class="hero-acciones">
+      <a class="boton boton--verde" href="/" data-iman>Volver al inicio</a>
+      <a class="boton boton--linea" href="/#visita">Pedir el estudio de sombras</a>
+    </p>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="pie-rejilla">
+    <div class="pie-marca">
+      <img src="/assets/logo.svg" width="52" height="52" alt="">
+      <p>SOLAINA<br><span>Instalación fotovoltaica · Lalín</span></p>
+    </div>
+    <div>
+      <h2>Dónde</h2>
+      <p>Rúa da Corredoira 44, nave 2<br>36500 Lalín · Pontevedra</p>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <p><a href="tel:+34986000000">986 00 00 00</a><br><a href="mailto:hola@solaina.example">hola@solaina.example</a></p>
+    </div>
+    <div>
+      <h2>Horario</h2>
+      <p>L–V 08:30 – 18:30</p>
+    </div>
+    <div>
+      <h2>Legal</h2>
+      <p><a href="/aviso-legal.html">Aviso legal y privacidad</a><br><a href="/">Volver al inicio</a></p>
+    </div>
+  </div>
+  <p class="sello">Sitio de demostración. SOLAINA es un negocio ficticio; los datos, precios, casos de
+    ejemplo y cifras de producción son de muestra y no corresponden a ninguna empresa ni instalación real.
+    <strong>Ninguna cifra de esta página es una promesa de ahorro.</strong></p>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+  <p>Esta web solo guarda en tu navegador que ya has visto este aviso. No hay cookies de terceros ni
+    analítica, y el mapa de Google se carga únicamente si pulsas su botón.</p>
+  <div class="cookie-acciones">
+    <button class="boton boton--verde" type="button" id="cookie-ok">De acuerdo</button>
+    <a class="cookie-mas" href="/aviso-legal.html">Más información</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
