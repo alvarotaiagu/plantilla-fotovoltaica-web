@@ -435,3 +435,28 @@ html.has-motion .cursor{display:flex;}
 /* nota al pie de un bloque de texto: el mismo humo, un cuerpo menor */
 .parrafo--nota{font-size:.92rem;color:var(--humo);border-left:2px solid var(--verde);padding-left:14px;}
 .parrafo--nota b{color:var(--hueso);font-weight:600;}
+
+
+/* ====================== cortina de entrada ================================
+   Obligatoria en todas las plantillas de la biblioteca. Se pinta SOLO cuando
+   hay movimiento: sin GSAP o con `prefers-reduced-motion` la regla de abajo la
+   borra del documento, así que la página no puede quedarse tapada. Además,
+   main.js tiene una red de seguridad por tiempo que la retira pase lo que pase.
+   ========================================================================== */
+.cortina{position:fixed;inset:0;z-index:400;overflow:hidden;}
+.cortina-centro{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;}
+.cortina.esta-fuera{display:none;}
+html:not(.has-motion) .cortina{display:none;}
+@media (prefers-reduced-motion:reduce){.cortina{display:none;}}
+
+/* El gesto de la fotovoltaica: la cortina ES la sombra. Se dibuja la varilla,
+   sale el sol y la sombra se acorta hacia su origen con la punta redondeada,
+   como al mediodía. */
+.cortina-sombra{position:absolute;inset:0;background:var(--panel);
+  transform-origin:0% 50%;border-radius:0 46% 46% 0 / 0 50% 50% 0;will-change:transform;}
+.cortina-gnomon{width:clamp(88px,20vw,128px);height:auto;color:var(--verde);}
+.cortina-suelo,.cortina-varilla{stroke-dasharray:1;stroke-dashoffset:1;}
+.cortina-marca{font-family:var(--display);font-weight:800;
+  font-size:clamp(1.3rem,4.6vw,1.9rem);letter-spacing:.3em;color:var(--hueso);
+  margin:0;opacity:0;}
